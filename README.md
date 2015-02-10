@@ -1,4 +1,4 @@
-[![Build Status](https://api.travis-ci.org/Data-Camp/datacampapi.svg?branch=master)](https://travis-ci.org/Data-Camp/datacampapi)
+[![Build Status](https://api.travis-ci.org/Data-Camp/datacampAPI.svg?branch=master)](https://travis-ci.org/Data-Camp/datacampAPI)
 
 <p align="center">
 <img src="https://s3.amazonaws.com/assets.datacamp.com/img/logo/logo_blue_full.svg" width="250">
