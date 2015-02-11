@@ -8,3 +8,6 @@ Maintainer: Filip Schouwenaars <filip@datacamp.com>
 Description: A set of functions to safely set, get, remove and check variables used by \url{www.DataCamp.com}.
 URL: www.DataCamp.com
 License: MIT + file LICENSE
+Suggests:
+    testwhat,
+    testthat
