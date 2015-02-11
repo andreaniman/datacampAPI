@@ -9,5 +9,4 @@ Description: A set of functions to safely set, get, remove and check variables u
 URL: www.DataCamp.com
 License: MIT + file LICENSE
 Suggests:
-    testwhat,
     testthat
