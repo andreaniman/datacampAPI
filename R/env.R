@@ -4,7 +4,9 @@
 #' exercises on \url{www.DataCamp.com}. Environments.
 #'
 #' @name env
-#' @keywords internal
+NULL
+
+#' @rdname env
 #' @export
 get_datacamp_env <- function() {
   position <- which(search() == "env:datacamp")

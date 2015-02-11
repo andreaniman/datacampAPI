@@ -32,5 +32,4 @@ clean_everything()
 Utility functions to retrieve relevant information for testing interactive
 exercises on \url{www.DataCamp.com}. Environments.
 }
-\keyword{internal}
 
