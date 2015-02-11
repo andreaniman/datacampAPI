@@ -111,6 +111,85 @@ remove_pec_code <- function() {
   rm("DC_PEC",envir = get_datacamp_env())
 }
 
+## STUDENT OUTPUT
+
+#' @rdname datacamp_vars
+#' @export
+get_student_output <- function() {
+  get_variable("DM.console.output", envir = get_datacamp_env(), message = "student output not available")
+}
+
+#' @rdname datacamp_vars
+#' @export
+set_student_output <- function(x) {
+  assign("DM.console.output", x, envir = get_datacamp_env())
+}
+
+#' @rdname datacamp_vars
+#' @export
+exists_student_output <- function(x) {
+  exists("DM.console.output", envir = get_datacamp_env())
+}
+
+#' @rdname datacamp_vars
+#' @export
+remove_student_output <- function() {
+  rm("DM.console.output", envir = get_datacamp_env())
+}
+
+## STUDENT ERROR
+
+#' @rdname datacamp_vars
+#' @export
+get_student_error <- function() {
+  get_variable("DM.error", envir = get_datacamp_env(), message = "student error not available")
+}
+
+#' @rdname datacamp_vars
+#' @export
+set_student_error <- function(x) {
+  assign("DM.error", x, envir = get_datacamp_env())
+}
+
+#' @rdname datacamp_vars
+#' @export
+exists_student_error <- function() {
+  exists("DM.error", envir = get_datacamp_env())
+}
+
+#' @rdname datacamp_vars
+#' @export
+remove_student_error <- function() {
+  rm("DM.error", envir = get_datacamp_env())
+}
+
+## SOLUTION OUTPUT
+
+#' @rdname datacamp_vars
+#' @export
+get_solution_output <- function() {
+  stop("not implemented yet")
+}
+
+#' @rdname datacamp_vars
+#' @export
+set_solution_output <- function(x) {
+  stop("not implemented yet")
+}
+
+#' @rdname datacamp_vars
+#' @export
+exists_solution_output <- function() {
+  stop("not implemented yet")
+}
+
+#' @name datacamp_vars
+#' @export
+remove_solution_output <- function() {
+  stop("not implemented yet")
+}
+
+
 ## PLOT INFO
 
 #' @rdname datacamp_vars

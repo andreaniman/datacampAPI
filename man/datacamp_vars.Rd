@@ -5,21 +5,33 @@
 \alias{exists_pec_code}
 \alias{exists_sct_code}
 \alias{exists_solution_code}
+\alias{exists_solution_output}
 \alias{exists_student_code}
+\alias{exists_student_error}
+\alias{exists_student_output}
 \alias{get_pec_code}
 \alias{get_render_height}
 \alias{get_render_width}
 \alias{get_sct_code}
 \alias{get_solution_code}
+\alias{get_solution_output}
 \alias{get_student_code}
+\alias{get_student_error}
+\alias{get_student_output}
 \alias{remove_pec_code}
 \alias{remove_sct_code}
 \alias{remove_solution_code}
+\alias{remove_solution_output}
 \alias{remove_student_code}
+\alias{remove_student_error}
+\alias{remove_student_output}
 \alias{set_pec_code}
 \alias{set_sct_code}
 \alias{set_solution_code}
+\alias{set_solution_output}
 \alias{set_student_code}
+\alias{set_student_error}
+\alias{set_student_output}
 \title{DataCamp utility functions (datacamp env)}
 \usage{
 get_solution_code()
@@ -53,6 +65,30 @@ set_pec_code(x)
 exists_pec_code()
 
 remove_pec_code()
+
+get_student_output()
+
+set_student_output(x)
+
+exists_student_output(x)
+
+remove_student_output()
+
+get_student_error()
+
+set_student_error(x)
+
+exists_student_error()
+
+remove_student_error()
+
+get_solution_output()
+
+set_solution_output(x)
+
+exists_solution_output()
+
+remove_solution_output()
 
 get_render_width()
 
