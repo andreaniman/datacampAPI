@@ -4,7 +4,11 @@
 uses_new_sct_system = function() {
   # obtain functions in package testwhat
   testwhat_functions = try(getNamespaceExports("testwhat"), silent = TRUE)
-  if (inherits(testwhat_functions, "try-error")) return(FALSE)
+  if (inherits(testwhat_functions, "try-error")) stop("Error in uses_new_sct_system: testwhat not found")
+  testwhatrstudio_functions = try(getNamespaceExports("testwhatrstudio"), silent = TRUE)
+  if (inherits(testwhatrstudio_functions, "try-error")) stop("Error in uses_new_sct_system: testwhat not found")
+
+  new_functions <- c(testwhat_functions, testwhatrstudio_functions)
 
   # obtain functions called in SCT code
   parseData <- getParseData(parse(text = get_sct_code(), keep.source = TRUE))
@@ -12,5 +16,5 @@ uses_new_sct_system = function() {
   sct_functions <- getParseText(parseData, id = sct_ids)
 
   # check if SCT code uses function from package testwhat
-  any(sct_functions %in% testwhat_functions)
+  any(sct_functions %in% new_functions)
 }
