@@ -7,6 +7,32 @@
 #' @name datacamp_vars
 NULL
 
+## EX_TYPE
+
+#' @rdname datacamp_vars
+#' @export
+get_exercise_type <- function() {
+  get_variable("DC_TYPE", envir = get_datacamp_env(), message = "exercise type is not available.")
+}
+
+#' @rdname datacamp_vars
+#' @export
+set_exercise_type <- function(x) {
+  assign("DC_TYPE", x, envir = get_datacamp_env())
+}
+
+#' @rdname datacamp_vars
+#' @export
+exists_exercise_type <- function(x) {
+  exists("DC_TYPE", envir = get_datacamp_env())
+}
+
+#' @rdname datacamp_vars
+#' @export
+remove_exercise_type <- function() {
+  rm("DC_TYPE",envir = get_datacamp_env())
+}
+
 ## SOLUTION CODE
 
 #' @rdname datacamp_vars

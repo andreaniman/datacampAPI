@@ -2,6 +2,7 @@
 % Please edit documentation in R/datacamp_vars.R
 \name{datacamp_vars}
 \alias{datacamp_vars}
+\alias{exists_exercise_type}
 \alias{exists_pec_code}
 \alias{exists_sct_code}
 \alias{exists_solution_code}
@@ -9,6 +10,7 @@
 \alias{exists_student_code}
 \alias{exists_student_error}
 \alias{exists_student_output}
+\alias{get_exercise_type}
 \alias{get_pec_code}
 \alias{get_render_height}
 \alias{get_render_width}
@@ -18,6 +20,7 @@
 \alias{get_student_code}
 \alias{get_student_error}
 \alias{get_student_output}
+\alias{remove_exercise_type}
 \alias{remove_pec_code}
 \alias{remove_sct_code}
 \alias{remove_solution_code}
@@ -25,6 +28,7 @@
 \alias{remove_student_code}
 \alias{remove_student_error}
 \alias{remove_student_output}
+\alias{set_exercise_type}
 \alias{set_pec_code}
 \alias{set_sct_code}
 \alias{set_solution_code}
@@ -34,6 +38,14 @@
 \alias{set_student_output}
 \title{DataCamp utility functions (datacamp env)}
 \usage{
+get_exercise_type()
+
+set_exercise_type(x)
+
+exists_exercise_type(x)
+
+remove_exercise_type()
+
 get_solution_code()
 
 set_solution_code(x)

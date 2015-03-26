@@ -1,5 +1,15 @@
 context("dc_variables")
 
+test_that("functions to set, get, remove and check existence of exercise_type work as expected", {
+  expect_that(exists_exercise_type(), is_false())
+  set_exercise_type("this is the exercise type")
+  expect_that(exists_exercise_type(), is_true())
+  expect_that(get_exercise_type(), equals("this is the exercise type"))
+  remove_exercise_type()
+  expect_that(exists_exercise_type(), is_false())
+  expect_that(get_exercise_type(), throws_error())
+})
+
 test_that("functions to set, get, remove and check existence of solution_code work as expected", {
   expect_that(exists_solution_code(), is_false())
   set_solution_code("this is solution code")
