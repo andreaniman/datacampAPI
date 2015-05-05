@@ -4,7 +4,10 @@
 \alias{uses_new_sct_system}
 \title{Check if the current sct uses datacampSCT functions (FALSE) or testwhat functions (TRUE)}
 \usage{
-uses_new_sct_system()
+uses_new_sct_system(sct_code)
+}
+\arguments{
+\item{sct_code}{the sct code}
 }
 \description{
 Check if the current sct uses datacampSCT functions (FALSE) or testwhat functions (TRUE)

@@ -6,6 +6,9 @@
 #' @name env
 NULL
 
+#' @export
+get_global_env <- globalenv
+
 #' @rdname env
 #' @export
 get_datacamp_env <- function() {
@@ -75,4 +78,3 @@ clean_everything <- function() {
   clean_solution_env()
   clean_sct_env()
 }
-

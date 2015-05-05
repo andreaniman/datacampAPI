@@ -1,7 +1,8 @@
 #' Check if the current sct uses datacampSCT functions (FALSE) or testwhat functions (TRUE)
 #'
+#' @param sct_code the sct code
 #' @export
-uses_new_sct_system = function() {
+uses_new_sct_system = function(sct_code) {
   # obtain functions in package testwhat
   testwhat_functions = try(getNamespaceExports("testwhat"), silent = TRUE)
   if (inherits(testwhat_functions, "try-error")) stop("Error in uses_new_sct_system: testwhat not found")
@@ -11,7 +12,7 @@ uses_new_sct_system = function() {
   new_functions <- c(testwhat_functions, testwhatrstudio_functions)
 
   # obtain functions called in SCT code
-  parseData <- getParseData(parse(text = get_sct_code(), keep.source = TRUE))
+  parseData <- getParseData(parse(text = sct_code, keep.source = TRUE))
   sct_ids <-  parseData$id[parseData$token == "SYMBOL_FUNCTION_CALL"]
   sct_functions <- getParseText(parseData, id = sct_ids)
 
